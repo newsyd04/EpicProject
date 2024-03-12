@@ -1,0 +1,164 @@
+/* Updated App.css or YourComponent.css */
+.brand-logo {
+    display: inline-block; /* Change this to inline-block or block as needed, visible by default */
+    max-width: 50px; /* Adjust the size as needed */
+    max-height: 50px; /* Adjust the size as needed */
+    vertical-align: middle; /* Align logo with text if they are on the same line */
+}
+
+.brand-text {
+    display: inline-block; /* Ensure text is also visible by default */
+    vertical-align: middle; /* Align text with logo */
+}
+
+/* Adjust the breakpoint as necessary for your design */
+@media (max-width: 768px) {
+    .brand-text {
+        display: none; /* Hide text on mobile */
+    }
+    .hero-image {
+        display:none;
+    }
+    
+    .brand-logo {
+        display: block; /* Ensure logo is still shown on mobile */
+        max-width: 100%; /* Adjust the logo size on mobile if needed */
+        margin: 0 auto; /* Center the logo if it's the only element visible */
+    }
+
+    .FooterStyling{
+        padding: 3%;
+    }
+
+    .items{
+        display: none;
+    }
+
+    .SecondText{
+        display: none;
+    }
+}
+
+
+.SectionStyling{
+    padding: 5%;
+}
+
+.NestStyling{
+    padding: 5%;
+    max-width: 30%; /* Adjust the size as needed */
+    max-height: 30%;
+
+}
+
+.FooterStyling{
+    background-color: #525f7a;
+}
+
+.footer-padding{
+    padding: 1%;
+}
+
+.items-color{
+    color: white;
+
+}
+
+.rowStyling{
+    background-color: #f6f9fc;
+    padding: 5%;
+}
+
+.row-padding{
+    padding: 1.5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    text-align: center;
+    gap: 10%;
+}
+
+.column-padding{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+
+.center{
+    display: flex;
+    align-items: left;
+    justify-self:center;
+    flex-direction: column;
+    text-align: left;
+    padding: 5%;
+}
+
+
+.center2{
+margin-top: 7.5%;
+}
+
+.center3{
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    flex-direction: column;
+}
+
+.hero-container{
+    display: flex;
+    align-items: center;
+    justify-self:center;
+    flex-direction: row;
+    margin-top: 6%;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-bottom: 10%;
+    gap: 10%;
+}
+
+.hero-image-sizing{
+    max-height: 600px;
+    border-radius: 4%;
+}
+
+
+
+.Doc-Styling{
+    padding: 5%;
+}
+
+
+.FAQ-Styling{
+    margin-bottom: 10%;
+    padding: 3%;
+}
+
+
+.CMS-Styling{
+    padding: 5%;
+}
+
+.padding-top{
+    padding-top: 3%;
+}
+
+
+.dashboard-container{
+    margin-top: 3%;
+    padding-left: 3%;
+    padding-right: 3%;
+    margin-bottom: 10%;
+}
+
+.dashboard-graphs{
+    padding-bottom: 3%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+}
