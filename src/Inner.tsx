@@ -13,7 +13,7 @@ function Inner(){
                 <hr />
                 <div className='grid'>
                     <div className='dashboard-graphs'>
-                    <iframe src="http://3.249.198.30:3000/d-solo/a49b8021-fda1-42a9-ad83-29fc07a7312d/pir-sensor-data?orgId=1&from=1709745753460&to=1709775749123&panelId=1" width="450" height="200" frameBorder="0"></iframe>
+                    <iframe src="http://3.249.198.30:3000/d-solo/a49b8021-fda1-42a9-ad83-29fc07a7312d/pir-sensor-data?orgId=1&from=1709745753460&to=1709775749123&panelId=1" width="100%" height="200" frameBorder="0"></iframe>
                         <h4>Motion Activity</h4>
                     </div>
                     <div className='dashboard-graphs'>
