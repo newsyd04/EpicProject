@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Nav from './Nav';
+import GUINav from './GUI';
 
 interface User {
   id: number;
@@ -74,7 +74,7 @@ const handleAssignmentSubmit = (e: React.FormEvent<HTMLFormElement>) => {
 
   return (
     <div className='container'>
-        <Nav />
+        <GUINav />
         <article className='container CMS-Styling'>
             <div className='container'>
                 <h2>Content Management System</h2>

@@ -11,6 +11,7 @@ import Chat from './Chat';
 import Footer from './Footer';
 import Search from './SearchComponent';
 import CMS from './CMS';
+import Roadmap from './Roadmap';
 
 function App() {
   return (
@@ -19,12 +20,12 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/login" element={<SignIn />} />
           <Route path="/Dashboard" element={<Inner />} />
+          <Route path="/GUI" element={<Documentation />} />
           <Route path="/Documentation" element={<Documentation />} />
           <Route path="/Chat" element={<Chat />} />
           <Route path="/Search" element={<Search />} />
           <Route path="/CMS" element={<CMS />} />
-
-
+          <Route path="/Roadmap" element={<Roadmap />} />
       </Routes>
     </>
   );

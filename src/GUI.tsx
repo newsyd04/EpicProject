@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import logo from './images/Synergia-logo.png';
 import './App.css';
 
-function InnerNav() {
+function GUINav() {
   return (
     <nav>
         <ul>
@@ -18,11 +18,23 @@ function InnerNav() {
             <li>
             <details className="dropdown">
                 <summary>
+                    GUI
+                </summary>
+                <ul dir="rtl">
+                <li><Link to="/Documentation">Profile</Link></li>
+                    <li><Link to="/Chat">Chat</Link></li>
+                    <li><Link to="/Search">Search</Link></li>
+                    <li><Link to="/CMS">CMS</Link></li>
+                </ul>
+            </details>
+            </li>
+            <li>
+            <details className="dropdown">
+                <summary>
                     Account
                 </summary>
                 <ul dir="rtl">
-                    <li><Link to="/GUI">GUI</Link></li>
-                    <li><Link to="/">Log Out</Link></li>
+                    <li><Link to="/login">Log In</Link></li>
                 </ul>
             </details>
             </li>
@@ -32,4 +44,4 @@ function InnerNav() {
 }
 
 
-export default InnerNav;
+export default GUINav;

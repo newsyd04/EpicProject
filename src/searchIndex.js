@@ -20,8 +20,8 @@ const searchIndex = [
     {
         page: 'Main - Our Mission',
         url: '/#our-mission', // Assuming an anchor link to this section
-        content: 'Welcome to SmartHeatSaver, where our mission is to revolutionize the way homes and businesses approach heating. Founded by a team of passionate engineers and environmentalists, SmartHeatSaver is dedicated to making energy efficiency accessible for everyone, optimizing your heating system\'s performance for comfort without waste.',
-        keywords: 'Mission, SmartHeatSaver, heating, energy efficiency, environmental sustainability, innovative solutions',
+        content: 'Welcome to Synergia, where our mission is to revolutionize the way homes and businesses approach heating. Follow our success stories on Instagram',
+        keywords: 'Mission, Synergia, heating, homes, businesses, appraoch, revolutionize, Follow, Success, Stories, Instagram',
     },
     {
         page: 'Main - FAQ',

@@ -3,6 +3,7 @@ import member1 from './images/member1.jpg';
 import member2 from './images/member2.jpg';
 import member3 from './images/member3.jpg';
 import nestlogo from './images/google-nest.jpg';
+import hero2 from './images/hero2.webp';
 import FAQ from './FAQ';
 
 function Main() {
@@ -18,14 +19,15 @@ function Main() {
                 </article>
             </section>
             <section id="our-mission"> {/* Added id for anchor */}
-                <div className='center'>
-                    <h2>Our Mission</h2>
-                    <p>Welcome to SmartHeatSaver, where our mission is to revolutionize the way homes and businesses approach heating. In a world increasingly aware of the need for environmental sustainability and the impact of energy consumption on our planet, we strive to provide innovative solutions that not only reduce your energy bills but also contribute to a healthier environment.</p>
-                    <p className='SecondText'>Founded by a team of passionate engineers and environmentalists, SmartHeatSaver began with a simple idea: to make energy efficiency accessible and straightforward for everyone. We understand that the choices we make in our daily lives have a significant impact on our world. That's why our devices are designed to optimize your heating system's performance, ensuring comfort without waste.</p>
-                    {/* Instagram Button */}
-                    <a href="https://www.instagram.com/yourinstagramhandle/" target="_blank" rel="noopener noreferrer">
-                        <button className='secondary'>See our success stories on Instagram</button>
-                    </a>
+                <div className='hero-container grid'>
+                    <div className='center3'>
+                        <h2>Our Mission</h2>
+                        <p>Welcome to Synergia, where our mission is to revolutionize the way homes and businesses approach heating.</p>                        {/* Instagram Button */}
+                        <a href="https://www.instagram.com/yourinstagramhandle/" target="_blank" rel="noopener noreferrer">
+                            <button className='secondary'>Follow our success stories on Instagram</button>
+                        </a>
+                    </div>
+                    <img src={hero2} alt="Brand Logo" className='hero-image-sizing hero-image'/>
                 </div>
             </section>
             {/* <section>

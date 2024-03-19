@@ -1,6 +1,6 @@
 import Nav from './Nav';
 import Main from './Main';
-import hero2 from './images/hero2.webp';
+import deviceRender from './images/finalrender.png';
 import Footer from './Footer';
 import { Link } from 'react-router-dom';
 
@@ -18,7 +18,7 @@ function Home(){
                     <p>Manage your devices and view your savings by signing into the dashboard below</p>
                     <Link to="/login" type='button'>Log in to dashboard</Link>
                 </div>
-                <img src={hero2} alt="Brand Logo" className='hero-image-sizing hero-image'/>
+                <img src={deviceRender} alt="Brand Logo" className='hero-image-sizing hero-image'/>
             </div>
             <hr />
             <section id='impact-stats'>

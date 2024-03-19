@@ -1,7 +1,7 @@
 
 import React, { useState } from 'react';
 import searchIndex from './searchIndex'; // Import your search index
-import Nav from './Nav';
+import GUINav from './GUI';
 
 const Search = () => {
   const [query, setQuery] = useState('');
@@ -24,7 +24,7 @@ const handleSearch = (e: { target: { value: string; }; }) => {
   return (
     <>
       <div className='container'>
-        <Nav />
+        <GUINav />
         <div className='container Doc-Styling'> 
           <article>
             <h2>Search</h2>

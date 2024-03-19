@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Nav from './Nav';
+import GUINav from './GUI';
 function Chat() {
     // State to store messages and their timestamps
     const [messages, setMessages] = useState<{ text: string; time: string; }[]>([]);
@@ -20,7 +20,7 @@ function Chat() {
     return ( 
         <>
             <div className="container">
-                <Nav />
+                <GUINav />
                 <div className="container Doc-Styling">
                     <article>
                         <h2>Chat Application</h2>

@@ -1,5 +1,5 @@
 import React from 'react';
-import Nav from './Nav';
+import GUINav from './GUI';
 
 interface FormElements extends HTMLFormControlsCollection {
   english: HTMLInputElement;
@@ -44,7 +44,7 @@ function Documentation() {
     return (
         <>
             <div className="container">
-            <Nav />
+            <GUINav />
                 <div className="container Doc-Styling">
                     <article>
                         <h2>Profile Information Form</h2>  

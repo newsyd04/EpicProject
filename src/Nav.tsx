@@ -7,22 +7,21 @@ function Nav() {
   return (
     <nav>
         <ul>
-            <img src={logo} alt="Brand Logo" className="brand-logo"/>            
-            <li className="brand-text"><strong>Synergia</strong></li> {/* Apply .brand-text class here */}
+            <Link className="secondary" to="/">
+                <img src={logo} alt="Brand Logo" className="brand-logo"/> 
+            </Link>           
+            <li className="brand-text"><strong><Link className="secondary" to="/">Synergia</Link></strong></li> {/* Apply .brand-text class here */}
         </ul>
         <ul>
             <li><Link className="secondary" to="/">Solutions</Link></li>
+            <li><Link className="secondary" to="/Roadmap">Roadmap</Link></li>
             <li>
             <details className="dropdown">
                 <summary>
                     Account
                 </summary>
                 <ul dir="rtl">
-                    <li><Link to="/Documentation">Profile</Link></li>
-                    <li><Link to="/Chat">Chat</Link></li>
-                    <li><Link to="/Search">Search</Link></li>
-                    <li><Link to="/CMS">CMS</Link></li>
-                    <li><Link to="/login">Roisin</Link></li>
+                    <li><Link to="/GUI">GUI</Link></li>
                     <li><Link to="/login">Login</Link></li>
                 </ul>
             </details>
