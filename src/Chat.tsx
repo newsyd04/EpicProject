@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import GUINav from './GUI';
+import Footer from './Footer'
+
 function Chat() {
     // State to store messages and their timestamps
     const [messages, setMessages] = useState<{ text: string; time: string; }[]>([]);
@@ -57,6 +59,9 @@ function Chat() {
                     </article>
                 </div>
             </div>
+            <footer>
+                <Footer />
+            </footer>
         </>
     );
 }

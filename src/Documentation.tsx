@@ -1,5 +1,6 @@
 import React from 'react';
 import GUINav from './GUI';
+import Footer from './Footer'
 
 interface FormElements extends HTMLFormControlsCollection {
   english: HTMLInputElement;
@@ -77,6 +78,9 @@ function Documentation() {
                     </article>
                 </div>
             </div>
+            <footer>
+                <Footer />
+            </footer>
         </>
     );
 }

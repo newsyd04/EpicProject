@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import GUINav from './GUI';
+import Footer from './Footer';
 
 interface User {
   id: number;
@@ -73,135 +74,131 @@ const handleAssignmentSubmit = (e: React.FormEvent<HTMLFormElement>) => {
 
 
   return (
-    <div className='container'>
-        <GUINav />
-        <article className='container CMS-Styling'>
-            <div className='container'>
-                <h2>Content Management System</h2>
-                <hr />
-                <h4 id='modules'>Module Titles</h4>
-                {modules.length > 0 && (
-                <table>
-                    <thead>
-                    <tr>
-                        <th>ID</th>
-                        <th>Title</th>
-                        <th>Start Date</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    {modules.map(module => (
-                        <tr key={module.id}>
-                        <td>{module.id}</td>
-                        <td>{module.title}</td>
-                        <td>{module.startDate}</td>
-                        </tr>
-                    ))}
-                    </tbody>
-                </table>
-                )}
-                <h4 id='users'>Users</h4>
-                <table>
-                <thead>
-                    <tr>
-                    <th>ID</th>
-                    <th>Name</th>
-                    <th>Role</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    {users.map(user => (
-                    <tr key={user.id}>
-                        <td>{user.id}</td>
-                        <td>{user.name}</td>
-                        <td>{user.role}</td>
-                    </tr>
-                    ))}
-                </tbody>
-                </table>
-                <h4 id='assignments'>Assignments</h4>
-                <table>
-                <thead>
-                    <tr>
-                    <th>ID</th>
-                    <th>Title</th>
-                    <th>Due Date</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    {assignments.map(assignment => (
-                    <tr key={assignment.id}>
-                        <td>{assignment.id}</td>
-                        <td>{assignment.title}</td>
-                        <td>{assignment.dueDate}</td>
-                    </tr>
-                    ))}
-                </tbody>
-                </table>
-            </div>
-        </article>
-        <article className='CMS-Styling'>
-            <h2 id='addnewcontent' className='padding-top'>Add New Content</h2>
-            <hr />
-            <form onSubmit={handleModuleSubmit}>
-                <fieldset className='grid'>
-                    <input
-                    id="moduleTitle"
-                    type="text"
-                    placeholder='Enter module title...'
-                    value={moduleTitle}
-                    onChange={(e) => setModuleTitle(e.target.value)}
-                    />
-                    <input
-                        id="startDate"
-                        type="date"
-                        placeholder='Enter Start date...'
-                        value={moduleStartDate}
-                        onChange={(e) => SetModuleStartDate(e.target.value)}
-                    />
-                    <button type="submit">Add Module</button>
-                </fieldset>
-            </form>
-            <form onSubmit={handleUserSubmit}>
-                <fieldset className='grid'>
-                    <input
-                    id="userName"
-                    type="text"
-                    placeholder='Enter user name...'
-                    value={userName}
-                    onChange={(e) => setUserName(e.target.value)}
-                    />
-                    <input
-                    id="userRole"
-                    type="text"
-                    placeholder='Enter user role...'
-                    value={userRole}
-                    onChange={(e) => setUserRole(e.target.value)}
-                    />
-                    <button type="submit">Add User</button>
-                </fieldset>
-            </form>
-            <form onSubmit={handleAssignmentSubmit}>
-                <fieldset className='grid'>
-                    <input
-                    id="assignmentTitle"
-                    type="text"
-                    placeholder='Enter assignment title...'
-                    value={assignmentTitle}
-                    onChange={(e) => setAssignmentTitle(e.target.value)}
-                    />
-                    <input
-                    id="dueDate"
-                    type="date"
-                    placeholder='Enter due date...'
-                    value={dueDate}
-                    onChange={(e) => setDueDate(e.target.value)}
-                    />
-                    <button type="submit">Add Assignment</button>
-                </fieldset>
-            </form>
-        </article>
-    </div>
+    <><div className='container'>
+          <GUINav />
+          <article className='container CMS-Styling'>
+              <div className='container'>
+                  <h2>Content Management System</h2>
+                  <hr />
+                  <h4 id='modules'>Module Titles</h4>
+                  {modules.length > 0 && (
+                      <table>
+                          <thead>
+                              <tr>
+                                  <th>ID</th>
+                                  <th>Title</th>
+                                  <th>Start Date</th>
+                              </tr>
+                          </thead>
+                          <tbody>
+                              {modules.map(module => (
+                                  <tr key={module.id}>
+                                      <td>{module.id}</td>
+                                      <td>{module.title}</td>
+                                      <td>{module.startDate}</td>
+                                  </tr>
+                              ))}
+                          </tbody>
+                      </table>
+                  )}
+                  <h4 id='users'>Users</h4>
+                  <table>
+                      <thead>
+                          <tr>
+                              <th>ID</th>
+                              <th>Name</th>
+                              <th>Role</th>
+                          </tr>
+                      </thead>
+                      <tbody>
+                          {users.map(user => (
+                              <tr key={user.id}>
+                                  <td>{user.id}</td>
+                                  <td>{user.name}</td>
+                                  <td>{user.role}</td>
+                              </tr>
+                          ))}
+                      </tbody>
+                  </table>
+                  <h4 id='assignments'>Assignments</h4>
+                  <table>
+                      <thead>
+                          <tr>
+                              <th>ID</th>
+                              <th>Title</th>
+                              <th>Due Date</th>
+                          </tr>
+                      </thead>
+                      <tbody>
+                          {assignments.map(assignment => (
+                              <tr key={assignment.id}>
+                                  <td>{assignment.id}</td>
+                                  <td>{assignment.title}</td>
+                                  <td>{assignment.dueDate}</td>
+                              </tr>
+                          ))}
+                      </tbody>
+                  </table>
+              </div>
+          </article>
+          <article className='CMS-Styling'>
+              <h2 id='addnewcontent' className='padding-top'>Add New Content</h2>
+              <hr />
+              <form onSubmit={handleModuleSubmit}>
+                  <fieldset className='grid'>
+                      <input
+                          id="moduleTitle"
+                          type="text"
+                          placeholder='Enter module title...'
+                          value={moduleTitle}
+                          onChange={(e) => setModuleTitle(e.target.value)} />
+                      <input
+                          id="startDate"
+                          type="date"
+                          placeholder='Enter Start date...'
+                          value={moduleStartDate}
+                          onChange={(e) => SetModuleStartDate(e.target.value)} />
+                      <button type="submit">Add Module</button>
+                  </fieldset>
+              </form>
+              <form onSubmit={handleUserSubmit}>
+                  <fieldset className='grid'>
+                      <input
+                          id="userName"
+                          type="text"
+                          placeholder='Enter user name...'
+                          value={userName}
+                          onChange={(e) => setUserName(e.target.value)} />
+                      <input
+                          id="userRole"
+                          type="text"
+                          placeholder='Enter user role...'
+                          value={userRole}
+                          onChange={(e) => setUserRole(e.target.value)} />
+                      <button type="submit">Add User</button>
+                  </fieldset>
+              </form>
+              <form onSubmit={handleAssignmentSubmit}>
+                  <fieldset className='grid'>
+                      <input
+                          id="assignmentTitle"
+                          type="text"
+                          placeholder='Enter assignment title...'
+                          value={assignmentTitle}
+                          onChange={(e) => setAssignmentTitle(e.target.value)} />
+                      <input
+                          id="dueDate"
+                          type="date"
+                          placeholder='Enter due date...'
+                          value={dueDate}
+                          onChange={(e) => setDueDate(e.target.value)} />
+                      <button type="submit">Add Assignment</button>
+                  </fieldset>
+              </form>
+          </article>
+      </div><footer>
+              <Footer />
+          </footer></>
   );
 }
 
