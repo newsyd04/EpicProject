@@ -15,9 +15,8 @@ import Roadmap from './Roadmap';
 
 function App() {
   return (
-    <BrowserRouter basename="/EpicProject">
+    <>
       {/* You can include Nav and Footer here if needed */}
-      <Nav />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<SignIn />} />
@@ -29,8 +28,7 @@ function App() {
         <Route path="/CMS" element={<CMS />} />
         <Route path="/Roadmap" element={<Roadmap />} />
       </Routes>
-      <Footer />
-    </BrowserRouter>
+    </>
   );
 }
 
