@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/EpicProject/static/css/main.d68ad861.css",
-    "main.js": "/EpicProject/static/js/main.e284cec9.js",
+    "main.js": "/EpicProject/static/js/main.2a602ce8.js",
     "static/media/hero2.webp": "/EpicProject/static/media/hero2.0eba38b5cb9404980bd7.webp",
     "static/media/Synergia-logo.png": "/EpicProject/static/media/Synergia-logo.a8bc625f285d83222446.png",
     "static/media/usa-flag.png": "/EpicProject/static/media/usa-flag.8972573553bbeb05cb02.png",
@@ -11,10 +11,10 @@
     "static/media/globe-logo.png": "/EpicProject/static/media/globe-logo.35d36842f804f4c69da2.png",
     "index.html": "/EpicProject/index.html",
     "main.d68ad861.css.map": "/EpicProject/static/css/main.d68ad861.css.map",
-    "main.e284cec9.js.map": "/EpicProject/static/js/main.e284cec9.js.map"
+    "main.2a602ce8.js.map": "/EpicProject/static/js/main.2a602ce8.js.map"
   },
   "entrypoints": [
     "static/css/main.d68ad861.css",
-    "static/js/main.e284cec9.js"
+    "static/js/main.2a602ce8.js"
   ]
 }
